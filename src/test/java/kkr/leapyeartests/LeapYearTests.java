@@ -24,4 +24,10 @@ public class LeapYearTests {
 		assertEquals(yearDivisibleByFourButNotByOneHundred + " is a leap year", 
 				leapYear.isLeapYear(yearDivisibleByFourButNotByOneHundred));
 	}
+	
+	@Test
+	public void yearsNotDivisbleByFourAreNotLeapYears() {
+		assertEquals(yearNotDivisibleByFour + " is not a leap year", 
+				leapYear.isLeapYear(yearNotDivisibleByFour));
+	}
 }
